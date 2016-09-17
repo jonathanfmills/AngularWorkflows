@@ -1,0 +1,35 @@
+<div class="col-md-6 col-md-offset-3">
+	<div class="todolist not-done">
+		<h1>Tasks</h1>
+		<form>
+			<input type="text" class="form-control add-todo" placeholder="Add task" ng-model="ctrl.newTaskName" on-enter="ctrl.newTask()">
+		</form>
+
+		<hr>
+		<table id="sortable" class="list-unstyled table table-striped" >
+			<tr class="ui-state-default" ng-repeat="task in ctrl.tasks">
+				<td>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="" />{{task.name}}</label>
+					</div>
+				</td>
+				<td >
+					<div  class="pull-right">
+					<select name="categorySelect" id="categorySelect" ng-model="task.category">
+						
+						<option ng-repeat="category in ctrl.categories" value="category">
+							{{category}}
+						</option>
+					</select>
+						</div>
+				</td>
+			</tr>
+
+		</table>
+		
+		<div class="todo-footer">
+
+		</div>
+	</div>
+</div>

@@ -1,0 +1,26 @@
+<div class="col-md-6 col-md-offset-3">
+	<div class="todolist not-done">
+		<h1>Categories</h1>
+		<form>
+			<input type="text" class="form-control add-todo" placeholder="Add category" ng-model="ctrl.newCategoryName" on-enter="ctrl.newCategory()">
+		</form>
+
+		<hr>
+		<table id="sortable" class="list-unstyled table table-striped" >
+			<tr class="ui-state-default" ng-repeat="category in ctrl.categories">
+				<td>
+					<div>
+						<label>
+							{{category}}</label>
+					</div>
+				</td>
+				
+			</tr>
+
+		</table>
+		
+		<div class="todo-footer">
+
+		</div>
+	</div>
+</div>

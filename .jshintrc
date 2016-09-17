@@ -1,0 +1,9 @@
+{
+	"curly": true,
+	"eqeqeq": true,
+	"esversion": 6,
+	"maxcomplexity":5,
+	"maxdepth":3,
+	"strict":true,
+	"predef": ["angular", "crmContactId", "console", "process", "modules", "require"]
+}
